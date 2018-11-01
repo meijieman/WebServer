@@ -17,6 +17,7 @@ import fi.iki.elonen.NanoHTTPD;
  */
 public class ResponseHandler extends NanoHTTPD{
 
+    // 端口不能低于 1024，否则报错 Caused by: libcore.io.ErrnoException: bind failed: EACCES (Permission denied)
     public static final int DEFAULT_SERVER_PORT = 8080;
     private static final int VIDEO_WIDTH = 320;
     private static final int VIDEO_HEIGHT = 240;
